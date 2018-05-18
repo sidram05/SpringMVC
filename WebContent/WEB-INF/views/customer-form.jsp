@@ -7,10 +7,15 @@
 	<style>
 		.error {color:red}
 	</style>
+	<link rel="stylesheet" type="text/css"
+		href="${pageContext.request.contextPath}/resources/css/my-test.css">
 </head>
 <body>
 <i>Fill out the form. Asterisk (*) means required.</i>
-	<form:form action="processForm" modelAttribute="student">
+	<form:form action="processForm" modelAttribute="customer">
+	Customer Id: <form:input path="id" />
+	<br>
+	<br>
 	First Name: <form:input path="firstName" />
 		<br>
 		<br>
@@ -40,7 +45,7 @@
 	<br>
 	
 	Country: <form:select path="country">
-				<form:options items="${student.countryOptions}"/>
+				<form:options items="${customer.countryOptions}"/>
 			</form:select>
 			
 	<br>

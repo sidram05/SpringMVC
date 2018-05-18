@@ -3,19 +3,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Product Confirmation Form</title>
+<title>Order Confirmation Form</title>
 <link rel="stylesheet" type="text/css"
 		href="${pageContext.request.contextPath}/resources/css/my-test.css">
 </head>
 <body>
 	<br><br>
-	The Product is confirmed: 
+	The Order is placed: 
 	<br><br>
-	Product Name: ${product.productName}
+	Product Name: ${order.prodName}
 	<br><br>
-	Product Description: ${product.productDescription}
+	Customer Name: ${order.customerName}
 	<br><br>
-	Price: ${product.price}
+	Quantity: ${order.quantity}
 	<br><br>	
 </body>
 </html>

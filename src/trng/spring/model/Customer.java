@@ -1,4 +1,4 @@
-package trng.spring.mvc;
+package trng.spring.model;
 
 import java.util.LinkedHashMap;
 
@@ -11,6 +11,7 @@ import javax.validation.constraints.Size;
 import trng.springdemo.validation.CourseCode;
 
 public class Customer {
+	private int id;
 	private String firstName;
 	
 	@NotNull(message="is required")
@@ -80,5 +81,10 @@ public class Customer {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 }

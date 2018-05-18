@@ -15,12 +15,12 @@
 
 <br><br>
 
-<a href="student/showForm">Customer Form</a>
+<a href="customer/showForm">Customer Form</a>
 <hr>
 
-<a href="student/showProductForm">Product Form</a>
+<a href="customer/showProductForm">Product Form</a>
 <hr>
 
-<a href="student/showForm">Order Form</a>
+<a href="customer/showOrderForm">Order Form</a>
 </body>
 </html>

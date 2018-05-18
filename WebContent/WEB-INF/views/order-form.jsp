@@ -4,24 +4,24 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Product Form</title>
 <link rel="stylesheet" type="text/css"
 		href="${pageContext.request.contextPath}/resources/css/my-test.css">
+<title>Order Form</title>
 </head>
 <body>
-	<form:form action="processProductForm" modelAttribute="product">
-	Product Name: <form:input path="productName" />
-	<form:errors path="productName" cssClass="error">
+	<form:form action="processOrderForm" modelAttribute="order">
+	Product Name: <form:input path="prodName" />
+	<form:errors path="prodName" cssClass="error">
 	</form:errors>
 		<br>
 		<br>
 		
-	Product Description: <form:input path="productDescription" />
+	Customer Name: <form:input path="customerName" />
 		<br>
 		<br>
 		
-	Price: <form:input path="price"/>
-	<form:errors path="price" cssClass="error">
+	Quantity: <form:input path="quantity"/>
+	<form:errors path="quantity" cssClass="error">
 	</form:errors>
 	<br>
 	<br>
